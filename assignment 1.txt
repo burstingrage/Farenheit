@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class TemperatureConverter {
+
+public static void main(String[] args) {
+// TODO Auto-generated method stub
+int farenheit;
+float celsius, input;
+		
+System.out.println("Enter a temperature in degrees Farenheit: ");
+Scanner keyboard = new Scanner(System.in);
+farenheit = keyboard.nextInt();
+input = farenheit - 32;
+celsius = input * 5/9;
+System.out.println(farenheit + " degrees Farenheit is " + celsius + " degrees Celsius.");
+
+}
+
+}
