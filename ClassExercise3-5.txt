@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+public class SwitchCase {
+
+	public static void main(String[] args) {
+		System.out.println("Enter one of your roles: \nAdministrator, Faculty, Staff, Student, Guest.");
+		Scanner keyboard = new Scanner(System.in);
+		String input = keyboard.next();
+		
+		//Administrator
+		switch (input) {
+		case "Administrator": case "administrator":
+			System.out.println("Welcome " + input + "!");
+		break;
+		
+		//Faculty
+		case "Faculty": case "faculty":
+			System.out.println("Welcome " + input + "!");
+		break;
+		
+		
+		//Staff
+		case "Staff": case "staff":
+			System.out.println("Welcome " + input + "!");
+		break;
+		
+		//Student
+		case "Student": case "student":
+			System.out.println("Welcome " + input + "!");
+		break;
+		
+		//Guest
+		case "Guest": case "guest":
+			System.out.println("Welcome " + input + "!");
+		break;
+		
+		default:
+			System.out.println("Entered invalid role.");
+		}
+
+	}
+}
